@@ -315,7 +315,7 @@ var geocoder = L.Control.geocoder({
     defaultMarkGeocode: false,
     geocoder: new L.Control.Geocoder.nominatim({
         geocodingQueryParams: {
-            viewbox: '-76,35,-77,34', // localization - update geocoder search bounds
+            viewbox: '-155,20,-156,19', // localization - update geocoder search bounds 19.7417550000000, -155
             bounded: 1
         }
     }),
