@@ -227,7 +227,7 @@ carteret_co_roads = undefined; // unset to unload large GEOJSON object
 // --- MAP ---
 // Default map view -- localization -- update default map view
 var defaultView = {
-    center: [34.80675621590259, -76.5376809057703],
+    center: [19.7417550000000, -155.8444370000000], 
     zoom: 11
 };
 
