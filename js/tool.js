@@ -84,7 +84,7 @@ var PROMPTS = {
 var CATEGORIES = {
     1: {
         tag: "residence",
-        label: "primary residence"
+        label: "home (primary residence)"
     },
     2: {
         tag: "property",
@@ -100,21 +100,25 @@ var CATEGORIES = {
     },
     5: {
         tag: "relax",
-        label: "place to relax by self"
+        label: "places to relax or recreate"
     },
     6: {
         tag: "connect",
         label: "place to connect with others"
     },
     7: {
-        tag: "street",
-        label: "local street"
+        tag: "religous",
+        label: "religious or spiritual plces"
     },
     8: {
-        tag: "majorroad",
-        label: "major road or bridge"
+        tag: "transportation infrastructure",
+        label: "local streets, major roads, or bridges"
     },
-    9: {
+    19: {
+        tag: "streams",
+        label: "streams or drainage areas of concern"
+    },
+    10: {
         tag: "other",
         label: "other place of concern"
     }
@@ -225,10 +229,12 @@ carteret_co_roads = undefined; // unset to unload large GEOJSON object
 
 
 // --- MAP ---
-// Default map view -- localization -- update default map view HNL = 21.315603, -157.858093
+// Default map view -- localization -- update default map view  21.498537, -158.003713
+
+
 var defaultView = {
-    center: [21.3156030000000, -157.8580930000000], 
-    zoom: 11
+    center: [21.4985370000000, -158.0037130000000], 
+    zoom: 10
 };
 
 // Initialize Leaflet map
@@ -316,7 +322,7 @@ var geocoder = L.Control.geocoder({
     defaultMarkGeocode: false,
     geocoder: new L.Control.Geocoder.nominatim({
         geocodingQueryParams: {
-            viewbox: '-157,22,-158,21', // localization - update geocoder search bounds 19.7417550000000, -155
+            viewbox: '-157,22,-159,21', // localization - update geocoder search bounds 19.7417550000000, -155
             bounded: 1
         }
     }),
