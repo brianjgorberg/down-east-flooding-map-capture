@@ -225,9 +225,9 @@ carteret_co_roads = undefined; // unset to unload large GEOJSON object
 
 
 // --- MAP ---
-// Default map view -- localization -- update default map view
+// Default map view -- localization -- update default map view HNL = 21.315603, -157.858093
 var defaultView = {
-    center: [19.7417550000000, -155.8444370000000], 
+    center: [21.3156030000000, -157.8580930000000], 
     zoom: 11
 };
 
@@ -311,11 +311,12 @@ map.addControl(searchControl);
 // Geocoder control
 var geocode_layers = [];
 
+
 var geocoder = L.Control.geocoder({
     defaultMarkGeocode: false,
     geocoder: new L.Control.Geocoder.nominatim({
         geocodingQueryParams: {
-            viewbox: '-155,20,-156,19', // localization - update geocoder search bounds 19.7417550000000, -155
+            viewbox: '-157,22,-158,21', // localization - update geocoder search bounds 19.7417550000000, -155
             bounded: 1
         }
     }),
