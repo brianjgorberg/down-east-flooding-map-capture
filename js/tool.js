@@ -107,7 +107,7 @@ var CATEGORIES = {
     },
     7: {
         tag: "religous",
-        label: "religious or spiritual plces"
+        label: "religious or spiritual places"
     },
     8: {
         tag: "transportation",
