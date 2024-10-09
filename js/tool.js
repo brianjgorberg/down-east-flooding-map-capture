@@ -39,13 +39,12 @@ var PROMPTS = {
         singlePlace: false,
         featureTypes: ['circle','polyline']
     },
-    // 6: {
-    //     prompt: `<br><h3>If <div class="alert-info p-2 d-inline-block rounded border border-info">{{place}}</div> were flooding enough for you</h3><h3>to use <div class="alert-info p-2 d-inline-block rounded border border-info">{{place}}</div> differently than you do now...</h3>`+
-    //      `<h1>How deep would the water be? <br />Where would the water be? <br />How often would it be flooding?</h1>`,
-    //     onlyFlooding: false,
-    //     singlePlace: true,
-    //     featureTypes: ['circle']
-    // },
+    6: {
+        prompt: "Can you recall any specific flooding details. Examples: water depth, duration of flood, or any causes of the flooding",
+        onlyFlooding: true,
+        singlePlace: false,
+        featureTypes: ['circle','polyline']
+    },
     // 7: {
     //     prompt: `How often would these roads need to flood for you to use them differently than you do now?`,
     //     onlyFlooding: false,
@@ -70,7 +69,7 @@ var PROMPTS = {
     //     singlePlace: false,
     //     featureTypes: ['polyline']
     // },
-    6: {
+    7: {
         prompt: `<div class="alert-success rounded">Done</div>`,
         onlyFlooding: false,
         singlePlace: false,
@@ -100,7 +99,7 @@ var CATEGORIES = {
     },
     5: {
         tag: "relax",
-        label: "places to relax or recreate"
+        label: "place to relax by self"
     },
     6: {
         tag: "connect",
@@ -111,10 +110,10 @@ var CATEGORIES = {
         label: "religious or spiritual plces"
     },
     8: {
-        tag: "transportation infrastructure",
+        tag: "transportation",
         label: "local streets, major roads, or bridges"
     },
-    19: {
+    9: {
         tag: "streams",
         label: "streams or drainage areas of concern"
     },
