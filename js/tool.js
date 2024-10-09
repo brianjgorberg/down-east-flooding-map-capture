@@ -40,7 +40,7 @@ var PROMPTS = {
         featureTypes: ['circle','polyline']
     },
     6: {
-        prompt: "Can you recall any specific flooding details. Examples: water depth, duration of flood, or any causes of the flooding",
+        prompt: "Can you recall any specific flooding details? Examples: flood depth, flood duration, or causes of the flooding",
         onlyFlooding: true,
         singlePlace: false,
         featureTypes: ['circle','polyline']
