@@ -13,16 +13,16 @@ var PROMPTS = {
         prompt: "At which of these places have you seen flooding?",
         onlyFlooding: false,
         singlePlace: false,
-        featureTypes: ['circle']
+        featureTypes: ['circle', 'polyline']
     },
     2: {
-        prompt: "Which of these places are most affected by flooding?",
+        prompt: "How often does it flood at these places?",
         onlyFlooding: true,
         singlePlace: false,
         featureTypes: ['circle','polyline']
     },
     3: {
-        prompt: "How often does it flood at these places?",
+        prompt: "Can you recall any specific flooding details? Examples: flood depth, flood duration, or causes of the flooding",
         onlyFlooding: true,
         singlePlace: false,
         featureTypes: ['circle','polyline']
@@ -35,12 +35,6 @@ var PROMPTS = {
     },
     5: {
         prompt: "How do you deal with flooding at these places?",
-        onlyFlooding: true,
-        singlePlace: false,
-        featureTypes: ['circle','polyline']
-    },
-    6: {
-        prompt: "Can you recall any specific flooding details? Examples: flood depth, flood duration, or causes of the flooding",
         onlyFlooding: true,
         singlePlace: false,
         featureTypes: ['circle','polyline']
@@ -69,7 +63,7 @@ var PROMPTS = {
     //     singlePlace: false,
     //     featureTypes: ['polyline']
     // },
-    7: {
+    6: {
         prompt: `<div class="alert-success rounded">Done</div>`,
         onlyFlooding: false,
         singlePlace: false,
