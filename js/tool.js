@@ -951,8 +951,8 @@ function _step1View() {
 function _step2View() {
     if (stepView == 2) {return false}
     stepView = 2;
-    $('.s2-narrow').animate({'width':'20vw'},350);
-    $('.s2-wide').animate({'width':'80vw'}, 400);
+    $('.s2-narrow').animate({'width':'50vw'},350);
+    $('.s2-wide').animate({'width':'50vw'}, 400);
     $('.s2-show').css('color','rgb(33, 37, 41)');
     // geocoder.options.collapsed = true;
     // geocoder.remove().addTo(map);
