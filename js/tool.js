@@ -386,12 +386,11 @@ bm_googleStreets.on('seedstart',(e)=>{
     totalToCache = e.queueLength;
 
     if (initialCache) {
-        map.fitBounds(county.getBounds());
         map.dragging.disable();
         map.scrollWheelZoom.disable();
         map._container.style.opacity = 0.5;
     }
-    
+// map.fitBounds(county.getBounds());    
     console.log(`caching tiles at zoom level ${cache} with queue length ${e.queueLength}...`);
 });
 

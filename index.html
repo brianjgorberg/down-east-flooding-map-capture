@@ -59,29 +59,32 @@
     </div>
 
     <!-- Modal for respondent id input -->
-    <div id="respondentIDModal" class="modal fade" tabindex="-1" role="dialog">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title">Enter respondent ID</h5>
-                    <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button> -->
-                </div>
-                <div class="modal-body">
-                    <form id="respondentIDForm">
-                        <div class="form-group">
-                            <input type="number" class="form-control focus-input" id="respondentIDInput" name="respondentIDInput" required>
-                        </div>
-                    </form>
-                </div>
-                <div class="modal-footer">
-                    <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal" id="cancelButton">Cancel</button> -->
-                    <button type="submit" class="btn btn-primary" form="respondentIDForm">Submit</button>
-                </div>
-            </div>
-        </div>
-    </div>
+	<div id="respondentIDModal" class="modal fade" tabindex="-1" role="dialog">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title text-center">
+						<strong>Enter the respondent ID in the box below:</strong>
+						<br><br>
+						Next, start placing points (press C or N) or line segments (press L) to map flood locations.
+						<br><br>
+						Click (i) in the bottom right for more details.
+					</h5>
+				</div>
+				<div class="modal-body">
+					<form id="respondentIDForm">
+						<div class="form-group">
+							<input type="number" class="form-control focus-input" id="respondentIDInput" name="respondentIDInput" required>
+						</div>
+					</form>
+				</div>
+				<div class="modal-footer">
+					<button type="submit" class="btn btn-primary" form="respondentIDForm">Submit</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
 
     <!-- Modal for marker input -->
     <div id="labelModal" class="modal fade" tabindex="-1" role="dialog">
